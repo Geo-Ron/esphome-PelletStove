@@ -13,6 +13,7 @@ Pakking voor rookgasavoer
 - Maximale temp: 260 gr. Celcius
 - Materiaal: HT siliconen
 - Kleur: Zwart of Rood
+- Dikte: 9,5mm
 
 ### Sellers
 
@@ -25,9 +26,10 @@ Pakking voor rookgasavoer
 
 ### Specifications
 
-Size: 107mm x 107mm
-Hole diameter: 78,5mm
-Mounting hole diameter: 10,5mm
+- Size: 107mm x 107mm
+- Hole diameter: 78,5mm
+- Mounting hole diameter: 10,5mm
+- thickness: 3mm
 
 ### Sellers
 
