@@ -151,7 +151,12 @@ Justfire also sells a WiFi module for the ginormous amount of €160,-. But for 
 
 ### And then I found the jazzmonger github repository
 
-When I found the [Github repository of Jazzmonger](https://github.com/jazzmonger/wood-pellet-stove-with-TYWE1S-Tuya-chip) I was overwhelmed with his work and enthousiasm.
+When I found the [Github repository of Jazzmonger](https://github.com/jazzmonger/wood-pellet-stove-with-TYWE1S-Tuya-chip) I was overwhelmed with his work and enthousiasm. Wow!
 
 I already have an [HomeAssistant](https://www.home-assistant.io/) instance at my mothers house, to monitor gas usage and room temperatures. It would really be a nice addition to connect the stove to it.
 
+What I would really like to accomplish is:
+
+- Be able to remotely control the stove
+  - Turn it on/off
+  - change the ECO mode
