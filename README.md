@@ -1,6 +1,6 @@
 # esphome-PelletStove
 
-This repository is dedicated to documenting the communication and controls of the pellet stove my mother bought recently (september 2024).
+This repository is dedicated to documenting the maintenance, parts, communication and controls of the pellet stove my mother bought recently (september 2024).
 
 I am going to be a parasite and feed on the work of someone else: https://github.com/jazzmonger/wood-pellet-stove-with-TYWE1S-Tuya-chip. Read his [discussions section](https://github.com/jazzmonger/wood-pellet-stove-with-TYWE1S-Tuya-chip/discussions), they are AWESOME! Many, many, many thanks in advanced.
 
