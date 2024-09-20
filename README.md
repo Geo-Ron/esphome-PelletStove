@@ -116,5 +116,42 @@ So I used my ash-vacuum-cleaner and take a deeper look into it.
 
 The stove was almost clean, with some sealings ruptured.
 
+Then I asked the company Justfire for a maintenance quote, and their response was this:
+
+- Incidental maintenance: €300,-
+- the mainboard (MCU) would need replacement because of a fire hazard: €200,-
+- the display would need to match the MCU and would also be replaced: €170,-
+- the ruptured seals would probably be included in the maintenance, if not that would add another €80,-
+
+**No way that I am going to pay €750,-** for a first maintenance and inspection. They did not ask me for any serial number, model number, date of manufacturing or anything else.
+
+I investigated other sellers for just the sealing-replacements than Justfire, but was unable to find all the seals that I needed. So I paid €80,- for two sealings at Justfire. These I can replace myself easily.
+
+Half an hours of vacuuming, brushing and replacing the seals and we are in business for now.
 
 </details>
+
+### Spare parts
+
+I will list all the parts I buy and/or replace in [parts-list.md](./parts-list.md).
+
+### The missing remote
+
+<details>
+<summary>Unable to find a replacement remote control
+</summary>
+
+I found out the stove should have a remote. This would be nice so my mother would not need to bend over to control the stove.
+
+I was unable to find a replacement remote for a price less then €80,-. That is too much as far as I am concerned. No guarantees that the remote would work anyway.
+
+Justfire also sells a WiFi module for the ginormous amount of €160,-. But for an extra €160,- they are willing to configure it for me 😄.
+
+</details>
+
+### And then I found the jazzmonger github repository
+
+When I found the [Github repository of Jazzmonger](https://github.com/jazzmonger/wood-pellet-stove-with-TYWE1S-Tuya-chip) I was overwhelmed with his work and enthousiasm.
+
+I already have an [HomeAssistant](https://www.home-assistant.io/) instance at my mothers house, to monitor gas usage and room temperatures. It would really be a nice addition to connect the stove to it.
+
