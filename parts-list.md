@@ -8,11 +8,11 @@
 
 Pakking voor rookgasavoer
 
-Binnendiameter: 74 mm
-Buitendiameter: 140 mm
-Maximale temp: 260 gr. Celcius
-Materiaal: HT siliconen
-Kleur: Zwart of Rood
+- Binnendiameter: 74 mm
+- Buitendiameter: 140 mm
+- Maximale temp: 260 gr. Celcius
+- Materiaal: HT siliconen
+- Kleur: Zwart of Rood
 
 ### Sellers
 
