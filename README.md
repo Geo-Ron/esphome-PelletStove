@@ -157,6 +157,19 @@ I already have an [HomeAssistant](https://www.home-assistant.io/) instance at my
 
 What I would really like to accomplish is:
 
-- Be able to remotely control the stove
+- Be able to remotely control the stove from HomeAssistant
   - Turn it on/off
   - change the ECO mode
+  - change the P1-4 modes
+  - be able to measure temperatures
+  - reading the stove 'states'
+  - detect and reset errors
+- All without any 'special' PCBs to buy
+  - I mean, I have several ESP32's laying around and I am willing to assemble a PCB of some sort and order material.
+
+But most, if not all, of the heavy lifting has been done by [Jazzmonger](https://github.com/jazzmonger) already.
+
+What I need to do is:
+
+- Understand what he has accomplished, how it works and how to copy/adapt/improve his work.
+  - I will be returning to him as I improve. Promised.
