@@ -32,3 +32,14 @@ What would be really nice is
 
 ## Wiring
 
+As far as I can tell from Jeff's github repo I need to wire the following
+
+I am not sure yet where to connect to on the device
+
+- UART1 <-> TuyaMCU
+    - TX: GPIO3 (tbd)
+    - RX: GPIO1 (tbd)
+- UART2 <- Display message decoding
+    - RX: GPIO10 (tbd)
+- UART3 <- main MCU real-time multiple temp decoding
+  - RX: GPIO5 (tbd)
