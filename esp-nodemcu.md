@@ -34,12 +34,15 @@ What would be really nice is
 
 As far as I can tell from Jeff's github repo I need to wire the following
 
-I am not sure yet where to connect to on the device
+I am not sure yet where to connect to on the display-device
+
+- 5V power to ESP
+- GND to ESP
 
 - UART1 <-> TuyaMCU
-  - TX: GPIO3 (tbd)
-  - RX: GPIO1 (tbd)
+  - TX: GPIO3 (tbd) with level shift
+  - RX: GPIO1 (tbd) with level shift
 - UART2 <- Display message decoding
-  - RX: GPIO10 (tbd)
+  - RX: GPIO10 (tbd) with level shift
 - UART3 <- main MCU real-time multiple temp decoding
-  - RX: GPIO5 (tbd)
+  - RX: GPIO5 (tbd) with level shift
