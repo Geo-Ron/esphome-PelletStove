@@ -164,6 +164,7 @@ What I would really like to accomplish is:
   - be able to measure temperatures
   - reading the stove 'states'
   - detect and reset errors
+  - monitor the pellet level
 - All without any 'special' PCBs to buy
   - I mean, I have several ESP32's laying around and I am willing to assemble a PCB of some sort and order material.
 
