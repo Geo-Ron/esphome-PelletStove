@@ -56,3 +56,8 @@ I am not sure yet where to connect to on the display-device
 
   ### Display message
 
+
+  ## Random
+
+  ![alt text](media/esp-nodemcu/image-1.png)
+
