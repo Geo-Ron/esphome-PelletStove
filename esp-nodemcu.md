@@ -25,6 +25,11 @@ So that would be
 - https://www.tinytronics.nl/en/communication-and-signals/level-converters/txs0108e-spi-i2c-uart-bi-directionele-logic-level-converter-8-channel
 - https://www.tinytronics.nl/en/communication-and-signals/level-converters/spi-i2c-uart-bi-directional-logic-level-converter-4-channel
 
+Pellet level sensor
+
+- TOF sensor- VL53L0X - https://www.tinytronics.nl/en/sensors/distance/vl53l0x-time-of-flight-tof-distance-sensor
+  - of VL53L1X? - https://www.tinytronics.nl/en/sensors/distance/vl53l1x-time-of-flight-tof-distance-sensor
+
 What would be really nice is
 
 - https://www.tinytronics.nl/en/cables-and-connectors/connectors/pin-headers/female/
@@ -51,4 +56,3 @@ I am not sure yet where to connect to on the display-device
 
   ### Display message
 
-  
