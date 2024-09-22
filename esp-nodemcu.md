@@ -59,5 +59,5 @@ I am not sure yet where to connect to on the display-device
 
   ## Random
 
-  ![alt text](media/esp-nodemcu/image-1.png)
+  ![alt text](media/esp-nodemcu/image-1.png) - https://github.com/jazzmonger/wood-pellet-stove-with-TYWE1S-Tuya-chip/discussions/34#discussioncomment-7352643
 
