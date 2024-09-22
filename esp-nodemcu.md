@@ -1,6 +1,5 @@
 # Connecting the ESP
 
-
 ## ESP - NodeMCU
 
 I have got several ESP devices lying around.
