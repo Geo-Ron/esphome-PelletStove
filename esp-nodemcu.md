@@ -46,3 +46,9 @@ I am not sure yet where to connect to on the display-device
   - RX: GPIO10 (tbd) with level shift
 - UART3 <- main MCU real-time multiple temp decoding
   - RX: GPIO5 (tbd) with level shift
+
+  ### TuyaMCU
+
+  ### Display message
+
+  
