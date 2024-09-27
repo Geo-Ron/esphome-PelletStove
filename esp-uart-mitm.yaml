@@ -1,0 +1,24 @@
+external_components:
+  - source: github://ssieb/esphome_components
+    components: [ uart_pitm ]
+
+uart:
+  - id: uart_bus1
+    rx_pin: GPIO25
+    tx_pin: GPIO26
+    baud_rate: 9600
+    debug:
+      direction: RX
+      dummy_receiver: false
+
+  - id: uart_bus2
+    rx_pin: GPIO14
+    tx_pin: GPIO27
+    baud_rate: 9600
+    debug:
+      direction: RX
+      dummy_receiver: false
+
+uart_mitm:
+  uart1: uart_bus1
+  uart2: uart_bus2
