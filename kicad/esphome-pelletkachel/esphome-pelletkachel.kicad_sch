@@ -4,6 +4,13 @@
 	(generator_version "8.0")
 	(uuid "ddc3eb2d-b42e-46b0-833c-933d18b4dd7f")
 	(paper "A4")
+	(title_block
+		(title "ESP32 Pellet Stove board")
+		(date "2024-09-27")
+		(rev "v0.9")
+		(company "PITCon.nl")
+		(comment 1 "ESP32 PCB for pellet stove communication")
+	)
 	(lib_symbols
 		(symbol "4ch-LLC:757"
 			(pin_names
@@ -5072,9 +5079,9 @@
 		)
 		(uuid "8d06e0df-1eff-499a-99d3-64e8232ea343")
 	)
-	(text "Interconnects Display and Mainboard\n- Facilitates reading TX \n  and RX lines by the ESP32\n- Prevents soldering\n- Requires extra cable"
+	(text "Interconnects Display and Mainboard\n- Facilitates reading TX \n   and RX lines by the ESP32\n\nWhy?\n- Prevents soldering the \n   display board\n- Requires extra cable"
 		(exclude_from_sim no)
-		(at 95.758 180.086 0)
+		(at 95.25 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5805,7 +5812,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "25bab4ab-0392-4e04-ac0f-9c20b33f81db")
 		(property "Reference" "#PWR07"
 			(at 148.59 189.23 0)
@@ -5817,7 +5823,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 156.21 189.2299 90)
+			(at 155.194 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,7 +5955,7 @@
 		(dnp no)
 		(uuid "2f34e071-95ec-4f24-a202-8649545d74fb")
 		(property "Reference" "JB4"
-			(at 132.08 185.166 0)
+			(at 136.144 183.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5957,7 +5963,7 @@
 			)
 		)
 		(property "Value" "Mainboard (DPC)"
-			(at 132.08 187.706 0)
+			(at 138.684 183.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6467,7 +6473,7 @@
 		(dnp no)
 		(uuid "7b4bfb9b-2168-4da9-bb4d-4cfeb5e520e1")
 		(property "Reference" "JB5"
-			(at 166.116 184.912 0)
+			(at 160.782 181.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6475,7 +6481,7 @@
 			)
 		)
 		(property "Value" "Display (J1)"
-			(at 166.116 187.452 0)
+			(at 163.322 181.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
