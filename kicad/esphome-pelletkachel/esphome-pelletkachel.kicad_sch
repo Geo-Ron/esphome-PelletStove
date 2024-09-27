@@ -5057,9 +5057,9 @@
 		)
 		(uuid "5afeaeba-3ed2-4565-9308-3367c0fadad6")
 	)
-	(text "TX and RX to Display facilitates Tuya UART comms with display.\n\nReading TX and RX lines between display and Mainboard facilitates:\n- message reading sent by display and \n- temp readings sent by mainboard \n\nTime of Flight sensor facilitates pellet container level."
+	(text "TX and RX to Display facilitates Tuya UART comms with display.\n\nReading TX and RX lines between display and Mainboard facilitates:\n- message reading sent by display and \n- temp readings sent by mainboard \n\nESP will be able to press the Thumbs button to escape errors.\n\nTime of Flight sensor facilitates pellet container level."
 		(exclude_from_sim no)
-		(at 16.256 26.162 0)
+		(at 16.002 28.448 0)
 		(effects
 			(font
 				(size 1.27 1.27)
