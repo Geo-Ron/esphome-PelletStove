@@ -5918,6 +5918,18 @@
 		(uuid 2e14c10e-aa0c-4794-80d6-6d82b5ddc9d8)
 	)
 	(rectangle
+		(start 82.55 144.78)
+		(end 125.095 167.005)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 350f20b5-afa1-4e87-8709-9e62eb12ca28)
+	)
+	(rectangle
 		(start 227.33 71.12)
 		(end 273.05 156.21)
 		(stroke
@@ -5929,6 +5941,18 @@
 			(type none)
 		)
 		(uuid 3747d895-4401-4b9e-8cf4-f05a3ee180e5)
+	)
+	(rectangle
+		(start 130.81 123.825)
+		(end 167.005 165.735)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9f4393a3-3e5b-441f-b198-4dc8ec2b4bb0)
 	)
 	(rectangle
 		(start 29.21 129.54)
@@ -6033,6 +6057,16 @@
 		)
 		(uuid "8d06e0df-1eff-499a-99d3-64e8232ea343")
 	)
+	(text "LLC"
+		(exclude_from_sim no)
+		(at 164.338 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "90991374-401a-4ad1-9858-734d27cc6aa7")
+	)
 	(text "Interconnects Display and Mainboard\n- Facilitates reading TX \n   and RX lines by the ESP32\n\nWhy?\n- Prevents soldering the \n   display board\n- Requires extra cable"
 		(exclude_from_sim no)
 		(at 95.25 182.88 0)
@@ -6043,6 +6077,16 @@
 			(justify left)
 		)
 		(uuid "d9d389f0-3988-4c7d-85a8-af8ac865cefa")
+	)
+	(text "Connector to TOF"
+		(exclude_from_sim no)
+		(at 92.202 146.812 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "df8f9ecb-d3bc-44bd-b7d6-9a32ff4a1a73")
 	)
 	(text "Mainboard"
 		(exclude_from_sim no)
