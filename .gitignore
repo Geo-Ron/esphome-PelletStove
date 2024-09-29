@@ -2,3 +2,6 @@
 ~*.lck
 */*/#auto_saved_files#
 _autosave*
+kicad/esphome-pelletkachel/output/esphome-pelletkachel.zip
+*.zip
+output/

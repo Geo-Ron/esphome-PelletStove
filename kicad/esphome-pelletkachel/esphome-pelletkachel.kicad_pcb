@@ -74,9 +74,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "output/")
 		)
 	)
 	(net 0 "")
@@ -419,7 +419,7 @@
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R1"
-			(at 2.413 0 270)
+			(at 2.413 0 -90)
 			(layer "F.SilkS")
 			(uuid "bba2408f-d546-4717-b839-18212f66447a")
 			(effects
@@ -430,7 +430,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 2.54 1.92 270)
+			(at 2.54 1.92 -90)
 			(layer "F.Fab")
 			(uuid "3218b97f-972a-4c3b-a7e8-cdbde75f04bb")
 			(effects
@@ -602,7 +602,7 @@
 			(uuid "59b90f37-2f73-49fe-a207-70f8b09b9aff")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 0 270)
+			(at 2.54 0 -90)
 			(layer "F.Fab")
 			(uuid "62513e86-32a6-4185-8f93-7b4fba49426f")
 			(effects
@@ -1238,7 +1238,7 @@
 		(descr "simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2")
 		(tags "terminal block bornier2")
 		(property "Reference" "JB3"
-			(at 2.54 -5.08 360)
+			(at 2.54 -5.08 0)
 			(layer "F.SilkS")
 			(uuid "3227226f-4354-48e4-a751-58dc2ac391f9")
 			(effects
@@ -1249,7 +1249,7 @@
 			)
 		)
 		(property "Value" "Thumbs"
-			(at 2.54 5.08 360)
+			(at 2.54 5.08 0)
 			(layer "F.Fab")
 			(uuid "95edb580-9897-46d9-8907-ca8c9cbf46df")
 			(effects
@@ -1441,7 +1441,7 @@
 			(uuid "96581f19-5be3-442e-9fee-4f9c0df33d51")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 0 360)
+			(at 2.54 0 0)
 			(layer "F.Fab")
 			(uuid "4628c16c-9b32-4ae6-a56c-df442f52da51")
 			(effects
@@ -1705,7 +1705,7 @@
 			(uuid "ce2652c9-bdfa-4638-86bf-c1a89b3e4d8b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "d78b03c4-d89a-4c6e-a4fe-ae371ce31856")
 			(effects
@@ -2280,7 +2280,7 @@
 			(uuid "7b28ac7a-c8cf-4643-8d9b-0e6895bce98d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.75 3.45 360)
+			(at 3.75 3.45 0)
 			(layer "F.Fab")
 			(uuid "02807e30-808a-45ab-9526-293ad92c9232")
 			(effects
@@ -2867,7 +2867,7 @@
 			(uuid "8a4244c4-e8a5-4155-a248-2c980efbf5e2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.75 3.45 360)
+			(at 3.75 3.45 0)
 			(layer "F.Fab")
 			(uuid "f0a81c36-dadb-40ab-af02-202296d2577b")
 			(effects
@@ -4661,7 +4661,7 @@
 		(uuid "6d43b212-ea14-4d51-afc4-d658a2ce0fad")
 		(at 93.98 92.075 90)
 		(property "Reference" "G***"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "13302969-61bb-440c-b85e-8208639f5554")
@@ -4674,7 +4674,7 @@
 			)
 		)
 		(property "Value" "LOGO"
-			(at 0.75 0 270)
+			(at 0.75 0 -90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "adc1a621-1c02-4836-9957-95c841438ef0")
@@ -6303,6 +6303,72 @@
 			)
 			(justify left bottom)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "0cffcddd-09a4-4b60-90f8-31acdeb890f0")
+		(pts
+			(xy 68.58 114.38) (xy 106.68 114.38)
+		)
+		(height 7.54)
+		(gr_text "38.1000 mm"
+			(at 87.63 120.77 0)
+			(layer "F.Fab")
+			(uuid "0cffcddd-09a4-4b60-90f8-31acdeb890f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "fb8d0b2d-f823-4fac-aa5a-a5371934da55")
+		(pts
+			(xy 76.2 43.18) (xy 76.2 119.38)
+		)
+		(height 10.159999)
+		(gr_text "76.2000 mm"
+			(at 64.890001 81.28 90)
+			(layer "F.Fab")
+			(uuid "fb8d0b2d-f823-4fac-aa5a-a5371934da55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 74.295 88.9)
