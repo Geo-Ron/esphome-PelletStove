@@ -8,6 +8,7 @@
 <summary>
 pelletkachel forum: instellingen  https://pelletkachelforum.nl/topic/1627-justfire
 </summary>
+  
 ## Geplaatst op: 23 November 2020 - 09:56 PM
 
 Ik heb een palletkachel aangeschaft met een cv aansluiting, deze Pallet kachel staat bij mij in de woonkamer en gebruik ik voor verwarming van de ruimte waar deze staat, de resterend warmte gebruik ik voor het opwarmen van mijn 800 liter buffervat waar ik mijn sanitair water door heen laat lopen en mijn cv installatie mee opwarmt, als ik de palletkachel laat draaien op koude dagen hoeft de warmtepomp niet zo zwaar te trekken en is mijn huisje lekker warm.
