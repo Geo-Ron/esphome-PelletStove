@@ -6,7 +6,7 @@
 
 <details>
 <summary>
-- [pelletkachel forum instellingen](https://pelletkachelforum.nl/topic/1627-justfire)
+pelletkachel forum: instellingen  https://pelletkachelforum.nl/topic/1627-justfire
 </summary>
 ## Geplaatst op: 23 November 2020 - 09:56 PM
 
