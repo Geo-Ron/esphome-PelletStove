@@ -42,10 +42,10 @@
 Using the thumbs up button you should see the actual measurements at the top right of the display.
 
 - 84 (R) 
-    - this should be room temperature (but the room temp was measured at 23 ˚C, which should translate to 74˚F)
+  > this should be room temperature (but the room temp was measured at 23 ˚C, which should translate to 74˚F)
 - 166 (S) 
-    - this should be exhaust temperature
+  > this should be exhaust temperature
 - 44 (P) 
-    > this should be protection temperature
+  > this should be protection temperature
 
 But these seem odd to me.
