@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "bat67.markdown-extension-pack"
+        "bat67.markdown-extension-pack",
+        "github.vscode-pull-request-github"
     ]
 }

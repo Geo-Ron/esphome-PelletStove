@@ -5,3 +5,4 @@ _autosave*
 kicad/esphome-pelletkachel/output/esphome-pelletkachel.zip
 *.zip
 output/
+gerber_to_order/
