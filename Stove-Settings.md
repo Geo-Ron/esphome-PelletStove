@@ -36,3 +36,13 @@
 | ↑ 1109         | Auto Running        | Off                 |                      |                                 |
 | ↑ 1109         | Wifi Mode           | Close               |                      |                                 |
 | ↑ 1109         | Temp Unit           | ˚C                  |                      |                                 |
+
+## Current temp settings
+
+Using the thumbs up button you should see the actual measurements.
+
+- 84 (R)
+- 166 (S)
+- 44 (P)
+
+But these seem odd to me.
