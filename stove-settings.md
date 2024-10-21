@@ -3,13 +3,13 @@
 | Config section | Entry               | Setting             | Set at               | Remark                          |
 | -------------- | ------------------- | ------------------- | -------------------- | ------------------------------- |
 | ↓ 1108         | P1 Smoke            | 130                 | 122                  |                                 |
-| ↓ 1108         | P1 Fans             | 140                 | 128                  |                                 |
+| ↓ 1108         | P1 Fans             | 140                 | 130                  |                                 |
 | ↓ 1108         | P1 Feed             | Last 5.0, Every 5.0 | Last 6.0, Every 2.0  |                                 |
 | ↓ 1108         | P2 Smoke            | 125                 | 120                  |                                 |
-| ↓ 1108         | P2 Fans             | 135                 | 125                  |                                 |
+| ↓ 1108         | P2 Fans             | 135                 | 110                  |                                 |
 | ↓ 1108         | P2 Feed             | Last 4.0, Every 5.0 | Last 7.0, Every 3.0  |                                 |
 | ↓ 1108         | P3 Smoke            | 122                 | 97                   |                                 |
-| ↓ 1108         | P3 Fans             | 130                 | 117                  |                                 |
+| ↓ 1108         | P3 Fans             | 130                 | 100                  |                                 |
 | ↓ 1108         | P3 Feed             | Last 3.0, Every 6.0 | Last 3.0 Every 5.0   |                                 |
 | ↓ 1108         | P4 Smoke            | 120                 | 90                   | 93 from forum                   |
 | ↓ 1108         | P4 Fans             | 125                 | 70 (minimum)         | 107 from forum                  |
