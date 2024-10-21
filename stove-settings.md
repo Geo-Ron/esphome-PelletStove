@@ -11,9 +11,9 @@
 | ↓ 1108         | P3 Smoke            | 122                 | 97                   |                                 |
 | ↓ 1108         | P3 Fans             | 130                 | 117                  |                                 |
 | ↓ 1108         | P3 Feed             | Last 3.0, Every 6.0 | Last 3.0 Every 5.0   |                                 |
-| ↓ 1108         | P4 Smoke            | 120                 | 80                   | 93 from forum                   |
+| ↓ 1108         | P4 Smoke            | 120                 | 90                   | 93 from forum                   |
 | ↓ 1108         | P4 Fans             | 125                 | 70 (minimum)         | 107 from forum                  |
-| ↓ 1108         | P4 Feed             | Last 3.0, Every 7.0 | Last 3.0, Every 10.0 | last 3.0, every 9.0 from forum  |
+| ↓ 1108         | P4 Feed             | Last 3.0, Every 7.0 | Last 1.5, Every 5.0 | last 3.0, every 9.0 from forum  |
 | ↓ 1108         | P5 Smoke            | 160                 |                      | 140 from forum                  |
 | ↓ 1108         | P6 Smoke            | 165                 |                      | 145 from forum                  |
 | ↓ 1108         | FTF                 | Last 3.0, Every 5.0 |                      |                                 |
