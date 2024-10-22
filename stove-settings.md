@@ -27,13 +27,13 @@
 | ↑ 1109         | Cleaning alarm time | 0H                  |                     |                                        |
 | ↑ 1109         | Background Light    | 0M                  | 5M                  |                                        |
 | ↑ 1109         | Protect temp        | 100                 |                     | Don't change                           |
-| ↑ 1109         | Exhaust L Temp      | 40                  | 30                    | 30 from forum                          |
-| ↑ 1109         | Exhaust H Temp      | 60                  | 35                    | 35 from forum                          |
+| ↑ 1109         | Exhaust L Temp      | 40                  |                     | 30 from forum                          |
+| ↑ 1109         | Exhaust H Temp      | 60                  |                     | 35 from forum                          |
 | ↑ 1109         | Gap Temp            | 25                  |                     | Restart temp difference at ECO1        |
 | ↑ 1109         | Cooling Temp        | 50                  |                     | 90 from forum, vanwege lange afsluiten |
 | ↑ 1109         | Temp off fan        | 60                  |                     |                                        |
 | ↑ 1109         | Open the AUX fan    | No                  |                     |                                        |
-| ↑ 1109         | Auto Running        | Off                 | On                  |                                        |
+| ↑ 1109         | Auto Running        | Off                 |                   |                                        |
 | ↑ 1109         | Wifi Mode           | Close               |                     |                                        |
 | ↑ 1109         | Temp Unit           | ˚C                  |                     |                                        |
 
