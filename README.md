@@ -45,7 +45,7 @@ The device was demo-ed and we took it home.
 
 <details>
 <summary>
-We bought a HY IN9A. Probably this is a rebranded device sold by the company 'Justfire' in the Netherlands.
+We bought a HY IN9A. Probably this is a rebranded device sold by the company 'Justfire' in the Netherlands. The original manufacturer is [HYStove](https://hystove.en.alibaba.com/)
 </summary>
 
 When Google-ing the model name, this led us to the site [http://histove.com](http://histove.com/?AirPelletStove/51.html). The manufacturing company (I assume) is HAINING HEYING HEATING TECHNOLOGY CO., LTD.
