@@ -50,6 +50,8 @@ We bought a HY IN9A. Probably this is a rebranded device sold by the company 'Ju
 
 When Google-ing the model name, this led us to the site [http://histove.com](http://histove.com/?AirPelletStove/51.html). The manufacturing company (I assume) is HAINING HEYING HEATING TECHNOLOGY CO., LTD.
 
+At this moment sold at [Alibaba.com](https://www.alibaba.com/product-detail/House-heating-use-modern-eco-friendly_62325821470.html)
+
 ### Site Model information
 
 Model: **HY-IN9A**
