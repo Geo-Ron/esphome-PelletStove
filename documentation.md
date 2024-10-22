@@ -92,3 +92,45 @@ Hoi Alexander,
 Heb het foutje gevonden met inloggen.
 Pijltje naar onderen dan paswoord ipv pijltje naar boven. Super bedankt voor de info. Groetjes Hatseflatz,
 </details>
+
+
+<details>
+<summary>
+pelletkachelforum: instellingen https://pelletkachelforum.nl/topic/1779-pelletkachel-blaast-zichzelf-uit-bij-opstarten/?p=6403
+</summary>
+Geplaatst op: 22 December 2021 - 10:00 AM
+
+(iets beter leesbaar, de teksteditor heeft in de vorige post mijn tabel verwijderd  :)  )
+ 
+start up clean 20s
+light delay time 5m
+ignitor delay time 2m
+lighting fail time 20m
+switch off 4m
+cleaning alarm time 0h
+protect temp 100
+exhaust L temp 38
+exhaust H temp 60
+Gap temp 5
+cooling temp 70
+Open the Aux fan? No
+ 
+P1 smoke 110
+P1 fans 110
+P1 feedtime last 4 every 6
+P2 smoke 105
+P2 fans 105
+P2 feedtime last 4 every 7
+P3 smoke 105
+P3 fans 100
+P3 feedtime last 3 every 6
+P4 smoke 98
+P4 fans 70
+P4 feedtime last 2 every 14
+P5 smoke 130
+P6 smoke 130
+workingtime 1640.5 hours
+Save defaults? No
+password modify ****
+ 
+</details>
