@@ -1,5 +1,7 @@
 # Display panel pictures
 
+Model: QNQ1_A_S3
+
 ## First pictures
 
 To find out if it had a wireless daughtboard available.  
