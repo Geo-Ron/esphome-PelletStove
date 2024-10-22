@@ -5,6 +5,8 @@
 To find out if it had a wireless daughtboard available.  
 The answer was: no.
 
+![alt text](media/display-panel/image-6.png)
+
 ![alt text](media/display-panel/image.png)
 
 ![alt text](media/display-panel/image-1.png)
