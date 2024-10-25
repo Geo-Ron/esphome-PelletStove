@@ -16,7 +16,10 @@ Number: QNQ1_B_S5
 
 ![alt text](media/main-control-unit/image-6.png)
 
-## Na vervanging 
+## After replacement
+
+All the sensors went bad. And I could not find the cause of this...
+So a replacement was ordered...
 
 Number: QNQ1_B_V2_S1
 
