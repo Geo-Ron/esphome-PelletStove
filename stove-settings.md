@@ -14,8 +14,8 @@
 | ↓ 1108         | P4 Smoke            | 120                 | 90                  | 93 from forum                          |
 | ↓ 1108         | P4 Fans             | 125                 | 70 (minimum)        | 107 from forum                         |
 | ↓ 1108         | P4 Feed             | Last 3.0, Every 7.0 | Last 1.5, Every 5.0 | last 3.0, every 9.0 from forum         |
-| ↓ 1108         | P5 Smoke            | 160                 |                     | 140 from forum                         |
-| ↓ 1108         | P6 Smoke            | 165                 |                     | 145 from forum                         |
+| ↓ 1108         | P5 Smoke            | 180                 |                     | (smoke bij cleaning) 140 from forum    |
+| ↓ 1108         | P6 Smoke            | 180                 |                     | (smoke bij startup) 145 from forum     |
 | ↓ 1108         | FTF                 | Last 3.0, Every 5.0 |                     |                                        |
 | ↑ 1109         | Start up clean      | 20s                 |                     | Don't change                           |
 | ↑ 1109         | P6 Temp             | 100                 |                     | Don't change                           |
