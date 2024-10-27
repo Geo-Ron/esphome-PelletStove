@@ -1,5 +1,12 @@
 # The Stove settings
 
+- [The Stove settings](#the-stove-settings)
+  - [Original boards](#original-boards)
+  - [Current temp settings](#current-temp-settings)
+  - [Stove settings after main MCU and display swap](#stove-settings-after-main-mcu-and-display-swap)
+
+## Original boards
+
 | Config section | Entry               | Setting             | Set at              | Remark                                 |
 |----------------|---------------------|---------------------|---------------------|----------------------------------------|
 | ↓ 1108         | P1 Smoke            | 130                 | 130                 | 122 forum                              |
