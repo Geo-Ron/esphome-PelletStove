@@ -1,6 +1,9 @@
 # Display panel pictures
 
-[[_TOC_]]
+- [Display panel pictures](#display-panel-pictures)
+  - [Display board specs](#display-board-specs)
+  - [First pictures](#first-pictures)
+  - [Replacement display panel](#replacement-display-panel)
 
 ## Display board specs
 
