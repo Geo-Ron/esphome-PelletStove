@@ -1,10 +1,10 @@
 # The Stove settings
 
 | Config section | Entry               | Setting             | Set at              | Remark                                 |
-| -------------- | ------------------- | ------------------- | ------------------- | -------------------------------------- |
-| ↓ 1108         | P1 Smoke            | 130                 | 130                 | 122 forum                                       |
+|----------------|---------------------|---------------------|---------------------|----------------------------------------|
+| ↓ 1108         | P1 Smoke            | 130                 | 130                 | 122 forum                              |
 | ↓ 1108         | P1 Fans             | 140                 | 130                 |                                        |
-| ↓ 1108         | P1 Feed             | Last 5.0, Every 5.0 | Last 5.0, Every 5.0 | Last 6.0, Every 2.0 from forum |
+| ↓ 1108         | P1 Feed             | Last 5.0, Every 5.0 | Last 5.0, Every 5.0 | Last 6.0, Every 2.0 from forum         |
 | ↓ 1108         | P2 Smoke            | 125                 | 120                 |                                        |
 | ↓ 1108         | P2 Fans             | 135                 | 110                 |                                        |
 | ↓ 1108         | P2 Feed             | Last 4.0, Every 5.0 | Last 7.0, Every 3.0 |                                        |
@@ -33,7 +33,7 @@
 | ↑ 1109         | Cooling Temp        | 50                  |                     | 90 from forum, vanwege lange afsluiten |
 | ↑ 1109         | Temp off fan        | 60                  |                     |                                        |
 | ↑ 1109         | Open the AUX fan    | No                  |                     |                                        |
-| ↑ 1109         | Auto Running        | Off                 |                   |                                        |
+| ↑ 1109         | Auto Running        | Off                 |                     |                                        |
 | ↑ 1109         | Wifi Mode           | Close               |                     |                                        |
 | ↑ 1109         | Temp Unit           | ˚C                  |                     |                                        |
 
@@ -42,13 +42,13 @@
 Using the thumbs up button you should see the actual measurements at the top right of the display.
 
 - 84 (R) 
-  > this should be room temperature (but the room temp was measured at 23 ˚C, which should translate to 74˚F)
-  >
-  > Looking better at this, it seems that someone has soldered a new sensor onto the cable, which was a 10KΩ NTC, a 100KΩ NTC seems to fit better
+  > this should be room temperature (but the room temp was measured at 23 ˚C, which should translate to 74˚F).  
+  > Looking better at this, it seems that someone has soldered a new sensor onto the cable, which was a 10KΩ NTC, a 100KΩ NTC seems to fit better.  
+  > Replacing it gives a better result (but I need to stabalize the readings).
 - 166 (S) 
-  > this should be exhaust temperature
+  > this is the exhaust temperature
 - 44 (P) 
-  > this should be protection temperature
+  > this sis the protection temperature (the temperature measure at the lower end of the pellet reservoir).
 
 But these seem odd to me.
 
@@ -60,7 +60,7 @@ So I needed to swap the hardware including the display. 😠
 Here is the new configuration.
 
 | Config section | Entry               | Setting              | Set at               | Remark                          |
-| -------------- | ------------------- | -------------------- | -------------------- | ------------------------------- |
+|----------------|---------------------|----------------------|----------------------|---------------------------------|
 | ↓ 1108         | P1 Smoke            | 85                   |                      |                                 |
 | ↓ 1108         | P1 Fans             | 82                   |                      |                                 |
 | ↓ 1108         | P1 Feed             | Last 2,5, Every 6.0  |                      |                                 |
