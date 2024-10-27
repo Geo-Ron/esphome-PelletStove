@@ -43,6 +43,7 @@ Using the thumbs up button you should see the actual measurements at the top rig
 
 - 84 (R) 
   > this should be room temperature (but the room temp was measured at 23 ˚C, which should translate to 74˚F)
+  >
   > Looking better at this, it seems that someone has soldered a new sensor onto the cable, which was a 10KΩ NTC, a 100KΩ NTC seems to fit better
 - 166 (S) 
   > this should be exhaust temperature
