@@ -54,7 +54,8 @@ But these seem odd to me.
 
 ## Stove settings after main MCU and display swap
 
-The main MCU started ginging a lot of errors. I needed to swap the hardware including the display. 😠
+The main MCU started giving a lot of errors. All three of the temperature sensors failed and I couldn't find out what was wrong.  
+So I needed to swap the hardware including the display. 😠
 
 Here is the new configuration.
 
