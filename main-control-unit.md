@@ -1,4 +1,15 @@
-# Main Control Unit Pictures
+# Main Control Unit 
+
+- [Main Control Unit](#main-control-unit)
+  - [Wiring](#wiring)
+  - [Pictures](#pictures)
+  - [After replacement of the MCU](#after-replacement-of-the-mcu)
+
+## Wiring
+
+![wiring](media/main-control-unit/image-11.png)
+
+## Pictures
 
 Number: QNQ1_B_S5
 
