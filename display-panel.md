@@ -2,6 +2,8 @@
 
 [[_TOC_]]
 
+## Display board specs
+
 Model: QNQ1_A_S3
 
 ## First pictures
