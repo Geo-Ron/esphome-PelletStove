@@ -53,6 +53,10 @@ But these seem odd to me.
 
 ## Stove settings after main MCU and display swap
 
+The main MCU started ginging a lot of errors. I needed to swap the hardware including the display. 😠
+
+Here is the new configuration.
+
 | Config section | Entry               | Setting              | Set at               | Remark                          |
 | -------------- | ------------------- | -------------------- | -------------------- | ------------------------------- |
 | ↓ 1108         | P1 Smoke            | 85                   |                      |                                 |
