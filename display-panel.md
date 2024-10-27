@@ -1,5 +1,7 @@
 # Display panel pictures
 
+[[_TOC_]]
+
 Model: QNQ1_A_S3
 
 ## First pictures
@@ -22,6 +24,8 @@ The answer was: no.
 ![original board](media/display-panel/image-5.png)
 
 ## Replacement display panel
+
+Model: QNQ1_A_S3
 
 THe mainboard had to be replaced. And then I had a firmware mismatch. So I also needed to replace the display board. 😠
 
