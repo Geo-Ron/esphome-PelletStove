@@ -107,9 +107,9 @@ void loop(void) {
 
 //      Serial.print("Resistance:");
 //      Serial.print(R1Table[i]/1000);
-      Serial.print("Temp: ");
-      Serial.print(tempTable[i]);
-      Serial.println();
+      Serial.print("Temp:");
+      Serial.println(tempTable[i]);
+//      Serial.println();
       }
 
 //      Serial.println();
