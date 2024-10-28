@@ -11,12 +11,13 @@ bool debugging = false;
  */
 
 const int numAnalogPins = 1; // Number of physical connections to enable.
-int pinLogicTable[1] = {26}; // Array to index logic pins.
+int pinLogicTable[numAnalogPins] = {26}; // Array to index logic pins.
 float pinSupplyVoltage[numAnalogPins];
 float ViTable[numAnalogPins];   // Array to store the calculated input voltages for each channel.
 float VoTable[numAnalogPins];   // Array to store the calculated output voltages for each channel.
 float R1Table[numAnalogPins];   // Array to store the calculated resistance of each channel.
 float tempTable[numAnalogPins]; // Array to store the calculated resistance of each probe (C).
+int adcBits = 4096;             // ESP32 ADC is 12 bit
 
 /* _____________THERMISTOR PERAMETERS______________
  *
@@ -71,7 +72,7 @@ void loop(void)
     // Find the output Voltage (from the voltage divider circuit).
     for (int i = 0; i < numAnalogPins; ++i)
     {
-        VoTable[i] = (SUPPLY_VCC / 4096) * ViTable[i];
+        VoTable[i] = (SUPPLY_VCC / adcBits) * ViTable[i];
     }
 
     // Find the unknown resistance value of the Thermistor, using a Series resistor of known value.
