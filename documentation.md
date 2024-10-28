@@ -134,3 +134,45 @@ Save defaults? No
 password modify ****
  
 </details>
+
+<details>
+<summary>
+Info op https://www.pelletsforum.be/viewtopic.php?t=2289
+</summary>
+
+Instellingen
+Algemeen 3s indrukken moersleutel
+P1: 20(S) 20(F) Smoke - Fan
+P2: 20(S) 20(F) Smoke - Fan
+P3: 20(S) 20(F) Smoke - Fan
+P4: 20(S) 20(F) Smoke - Fan
+P5: 20(S) Smoke
+P6: 20(S) Smoke
+FTF: 30 *2S First time feed
+Reinigen: Voor: 30S Elke: 10M
+Eco: Eco2 (zacht) blijven branden eens gewenste temperatuur is bereikt
+Taal: Nederlands
+*Automatische aan/uit per dag - weggelaten*
+*Klok - weggelaten*
+*Herstellen - weggelaten*
+Version: V07.02
+Specifiek 3s indrukken pijl beneden ↓
+Input password: 1088
+P1 Smoke: 110
+P1 Fans: 120
+P1 Feedtime: Last: 4 Every: 6
+P2 Smoke: 106
+P2 Fans: 115
+P2 Feedtime: Last: 4 Every: 7
+P3 Smoke: 100
+P3 Fans: 110
+P3 Feedtime: Last: 3 Every: 6
+P4 Smoke: 95
+P4 Fans: 110
+P4 Feedtime: Last: 2 Every: 7
+P5 Smoke: 125
+P6 Smoke: 130
+*Working time - weggelaten*
+*Save Defaults - weggelaten*
+*Password Modify - weggelaten*
+</details>

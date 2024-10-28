@@ -55,9 +55,8 @@ Using the thumbs up button you should see the actual measurements at the top rig
 - 166 (S) 
   > this is the exhaust temperature
 - 44 (P) 
-  > this sis the protection temperature (the temperature measure at the lower end of the pellet reservoir).
+  > this is the protection temperature (the temperature measure at the lower end of the pellet reservoir).
 
-But these seem odd to me.
 
 ## Stove settings after main MCU and display swap
 
