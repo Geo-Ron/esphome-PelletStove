@@ -66,17 +66,17 @@ So I needed to swap the hardware including the display. 😠
 Here is the new configuration.
 
 | Config section | Entry               | Setting              | Set at               | Remark                          |
-|----------------|---------------------|----------------------|----------------------|---------------------------------|
-| ↓ 1108         | P1 Smoke            | 85                   |                      |                                 |
+| -------------- | ------------------- | -------------------- | -------------------- | ------------------------------- |
+| ↓ 1108         | P1 Smoke            | 85                   | 90                   |                                 |
 | ↓ 1108         | P1 Fans             | 82                   |                      |                                 |
 | ↓ 1108         | P1 Feed             | Last 2,5, Every 6.0  |                      |                                 |
-| ↓ 1108         | P2 Smoke            | 80                   |                      |                                 |
+| ↓ 1108         | P2 Smoke            | 80                   | 85                   |                                 |
 | ↓ 1108         | P2 Fans             | 78                   |                      |                                 |
 | ↓ 1108         | P2 Feed             | Last 2.5, Every 8.0  |                      |                                 |
-| ↓ 1108         | P3 Smoke            | 76                   |                      |                                 |
+| ↓ 1108         | P3 Smoke            | 76                   | 82                   |                                 |
 | ↓ 1108         | P3 Fans             | 65                   |                      |                                 |
 | ↓ 1108         | P3 Feed             | Last 3.0, Every 10.0 |                      |                                 |
-| ↓ 1108         | P4 Smoke            | 80                   | 72                   |                                 |
+| ↓ 1108         | P4 Smoke            | 80                   | 72 -> 80             | Blackened window                |
 | ↓ 1108         | P4 Fans             | 38                   |                      |                                 |
 | ↓ 1108         | P4 Feed             | Last 3.0, Every 10.0 | Last 2.0, Every 12.0 |                                 |
 | ↓ 1108         | P5 Smoke            | 140                  | 150                  | smoke fan speed during cleaning |
@@ -99,14 +99,14 @@ Here is the new configuration.
 | ↑ 1109         | Temp off fan        | 80                   |                      |                                 |
 | ↑ 1109         | Open the AUX fan    | No                   |                      |                                 |
 | ↑ 1109         | Auto Running        | Off                  |                      |                                 |
-| 🔧             | P1                  | 0S 0F                |                      |                                 |
-| 🔧             | P2                  | 0S 0F                |                      |                                 |
-| 🔧             | P3                  | 0S 0F                |                      |                                 |
-| 🔧             | P4                  | 0S 0F                |                      |                                 |
-| 🔧             | P5                  | 0S                   |                      |                                 |
-| 🔧             | P6                  | 0S                   |                      |                                 |
-| 🔧             | Reinigen voor       | 30S elke 30M         |                      |                                 |
-| 🔧             | Eco                 | Eco2                 |                      |                                 |
-| 🔧             | Beeb_hints          | Off                  | On                   |                                 |
-| 🔧             | Language            | Nederlands           |                      |                                 |
-| 🔧             | Version             | v3.01                |                      |                                 |
+| 🔧              | P1                  | 0S 0F                |                      |                                 |
+| 🔧              | P2                  | 0S 0F                |                      |                                 |
+| 🔧              | P3                  | 0S 0F                |                      |                                 |
+| 🔧              | P4                  | 0S 0F                |                      |                                 |
+| 🔧              | P5                  | 0S                   |                      |                                 |
+| 🔧              | P6                  | 0S                   |                      |                                 |
+| 🔧              | Reinigen voor       | 30S elke 30M         |                      |                                 |
+| 🔧              | Eco                 | Eco2                 |                      |                                 |
+| 🔧              | Beeb_hints          | Off                  | On                   |                                 |
+| 🔧              | Language            | Nederlands           |                      |                                 |
+| 🔧              | Version             | v3.01                |                      |                                 |
