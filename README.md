@@ -31,7 +31,7 @@ I then decided to look for an alternative for their unused gas fireplace, but wa
 
 So the search was for a used pellet stove, that would fit the hole in the wall.
 
-It took me more then a year to find one with an acceptable price. My father died during my search, so he was not going to benefit from it anymore.
+It took me more then a year to find one with an acceptable price. My father passed away during my search, so he was not going to benefit from it anymore.
 
 Then I found one, the price was okay. The seller did not know of a manufacturer or model number. The gamble was on me to risk the money of someone else. 
 
@@ -100,6 +100,7 @@ So I tried to image search the stove I bought and there were several options:
   - The Nemaxx P6 is **identical** to the HY 6A.
 - Cleveland Ironworks stove.
   - Their model [No.215](https://www.cleveland-ironworks.com/no-215-mini-pellet-stove.html) really looks like the same HY 6A.
+- But also other brands: Sole, Grace Ningbo
 
 </details>
 
