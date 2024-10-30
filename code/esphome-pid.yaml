@@ -1,0 +1,276 @@
+substitutions:
+  friendly_name: "Solar Batt Heat Controller"
+ 
+esphome:
+  name: "solar-battery-heat-controller"
+  platformio_options:
+    #upload_speed: 115200
+    # #REQUIRED FOR UART TO WORK
+    board_build.extra_flags:
+      - "-DARDUINO_USB_CDC_ON_BOOT=0"  # Override, defaults to '-DARDUINO_USB_CDC_ON_BOOT=1'
+ 
+# external_components:
+#   - source: github://ssieb/esphome@dallas
+#     components: [ dallas ]
+#     refresh: 1min
+ 
+external_components:
+  - source: github://nrandell/dallasng
+ 
+esp32:
+  board: featheresp32-s2
+ 
+# pid climate log update is noisy, dial it back to warn
+logger:
+  hardware_uart: uart0
+  level: DEBUG
+  logs: 
+    climate: ERROR
+    dht: WARN  
+ 
+ 
+uart: 
+  - id: debug_uart
+    rx_pin: 3
+    tx_pin: 1 
+    baud_rate: 115200
+ 
+debug:
+  update_interval: 10s   
+text_sensor:
+  - platform: debug
+    device:
+      name: "Device Info"
+    reset_reason:
+      name: "Reset Reason"
+ 
+api:
+ 
+ota:
+ 
+# dallas:
+#   - pin: 9
+#     update_interval: 1s
+dallasng:
+  - pin: GPIO9
+    update_interval: 3s
+ 
+output:
+  - platform: ac_dimmer
+    id: dimmer
+    gate_pin: GPIO18 
+    zero_cross_pin: 
+      number: GPIO39 
+      mode: INPUT_PULLUP
+    method: leading pulse
+    init_with_half_cycle: true      
+web_server:
+  port: 80
+ 
+wifi:
+  #use_address: 192.168.1.111
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+ 
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "$friendly_name"
+    password: "wifipassword"
+ 
+captive_portal:
+ 
+button:
+  - platform: restart #allows remote reset of tywe1s chip from home assistant or internally
+    id: restart_esp
+    name: "$friendly_name Restart" 
+  - platform: safe_mode # required to upload firmware if were low on memory. put chip in safe mode, reboot, then OTA upload new firmware.
+    name: "$friendly_name SAFE Mode BUTTON"#
+ 
+sensor:
+  - platform: dallasng
+    id: battery_probe
+    name: "Solar-Batt Probe Temp"
+    index: 0
+    resolution: 12
+    filters:
+      - filter_out: NAN
+ 
+  - platform: uptime
+    internal: false
+    name: ${friendly_name} Uptime
+    id: uptime_s
+    update_interval: 10s
+ 
+  - platform: wifi_signal
+    name: "$friendly_name WiFi Signal"
+    update_interval: 10s 
+    id: wifi_signal_db 
+  - platform: copy # Reports the WiFi signal strength in %
+    source_id: wifi_signal_db
+    name: "$friendly_name WiFi Signal %"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "%"
+    entity_category: "diagnostic"     
+  - platform: template
+ 
+#Pick the batt temp thats availble, HA BMS first otherwise the batt probe here in the ESP32
+    name: $friendly_name Valid Battery Temp
+    id: valid_temp
+    unit_of_measurement: "°C"
+    lambda: |-
+      if (global_api_server->is_connected())  
+      {
+        return id(bms_battery_temperature).state;
+      } else {
+        return id(battery_probe).state;
+      }
+ 
+  # GET TEMP FROM INVERTER in home assistant 
+  - platform: homeassistant
+    entity_id: sensor.battery_temperature
+    name: "BMS inverter temp "
+    id: bms_battery_temperature
+      # If you don't smooth the output readings 
+      # the PID controller over reacts to small changes.
+    filters:
+      #- lambda: return x * (9.0/5.0) + 32.0; # c to f
+      - lambda: return (x - 32.0) * (5.0/9.0); //f to c, its coming in as F (x°F − 32) × 5/9
+    #    - exponential_moving_average:  
+    #        alpha: 0.1
+    #        send_every: 1
+ 
+#   - platform: dallas
+#     address: 0x0a01204e86cdca28
+#     name: "Solar-Batt Probe Temp"
+#     id: battery_probe
+#     filters:
+#        - exponential_moving_average:  
+#            alpha: 0.1
+#            send_every: 1
+#        - filter_out: nan
+# #get rid of the noise from the sensor
+#        - sliding_window_moving_average:
+#            window_size: 3
+#            send_every: 1  
+ 
+  - platform: template
+    name: $friendly_name p term
+    id: p_term
+    unit_of_measurement: "%"
+    accuracy_decimals: 2
+ 
+  - platform: template
+    name: $friendly_name i term
+    id: i_term
+    unit_of_measurement: "%"
+    accuracy_decimals: 2
+ 
+  - platform: template
+    name: $friendly_name d term
+    id: d_term
+    unit_of_measurement: "%"
+    accuracy_decimals: 2
+ 
+  - platform: template
+    name: $friendly_name output value
+    unit_of_measurement: "%"
+    id: o_term
+    accuracy_decimals: 2
+ 
+  - platform: template
+    name: $friendly_name error value
+    id: e_term
+    accuracy_decimals: 2
+ 
+  - platform: pid
+    name: "$friendly_name Heater level (PWM Voltage)"
+    climate_id: console_thermostat
+    type: HEAT
+ 
+########################################################
+# START THE HEATER CONTROLLER SETUP
+########################################################
+number:
+  ## RECEIVE kp,ki and kd parameters from input_text.kx helpers in 
+  # Home Assistant. See the PID controller below
+  # These helper values will get saved to flash thus permanently over-riding 
+  # the initial values set in the PID below.
+ 
+  # KP
+  - platform: template
+    name: $friendly_name kp
+    icon: mdi:chart-bell-curve
+    restore_value: true
+    min_value: 0
+    max_value: 50
+    step: 0.001
+    set_action: 
+      lambda: |- 
+        // ESP_LOGI("main", "!!!!!! kp from boot %d", id("console_fan_kp") );
+        // id(console_thermostat).set_kp( id("$friendly_name kp") );
+        id(console_thermostat).set_kp( x );
+  # KI
+  - platform: template
+    name: $friendly_name ki
+    icon: mdi:chart-bell-curve
+    restore_value: true
+    min_value: 0
+    max_value: 50
+    step: 0.0001
+    set_action: 
+      lambda: id(console_thermostat).set_ki( x );
+ 
+  # KD
+  - platform: template
+    name: $friendly_name kd
+    icon: mdi:chart-bell-curve
+    restore_value: true
+    min_value: -50
+    max_value: 50
+    step: 0.001
+    set_action: 
+      lambda: id(console_thermostat).set_kd( x );
+ 
+ 
+# Expose a PID-controlled Thermostat
+# Manual: https://esphome.io/components/climate/pid.html
+climate:
+  - platform: pid
+    name: "$friendly_name Thermostat"
+    id: console_thermostat
+    #sensor: battery_probe
+    sensor: valid_temp #Pick the one thats availble
+    # LiFePo4 optimal temp 
+    default_target_temperature: 18.3C
+    heat_output: dimmer
+    deadband_parameters:
+      threshold_high: 1.0°C
+      threshold_low: -1.5°C
+    visual:
+      min_temperature: 10 °C
+      max_temperature: 40 °C
+    on_state:
+      - sensor.template.publish:
+          id: p_term
+          state: !lambda 'return -id(console_thermostat).get_proportional_term() * 100.0;'
+      - sensor.template.publish:
+          id: i_term
+          state: !lambda 'return -id(console_thermostat).get_integral_term()* 100.0;'
+      - sensor.template.publish:
+          id: d_term
+          state: !lambda 'return -id(console_thermostat).get_derivative_term()* 100.0;'
+      - sensor.template.publish:
+          id: o_term
+          state: !lambda 'return -id(console_thermostat).get_output_value()* 100.0;'
+      - sensor.template.publish:
+          id: e_term
+          state: !lambda 'return -id(console_thermostat).get_error_value();'
+ 
+    # See the README for setting up these parameters.
+    # These are over ridden by the number templates above.
+    control_parameters:
+      kp: 0.32
+      ki: 0.0009
+      kd: 0.0
+      max_integral: 0.0  
